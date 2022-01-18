@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background:  hsl(185, 75%, 39%);
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+ }  
+
+
+.fondo-one{
+    position: absolute;
+    left: -350px;
+    top: -350px;
+}
+
+.fondo-one img{
+    width: 96%;
+}
+
+.fondo-two{
+    position: absolute;
+    right: -350px;
+    bottom: -350px;
+}
+
+.fondo-two img{
+    width: 92%;
+}
+
+.caja{
+    background: white; 
+    border-radius: 20px;
+    z-index: 2;
+ } 
+
+ .caja .fondo-avatar{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+
+.caja .avatar{
+    border-radius: 50%;
+    border: 6px solid white;
+    position: absolute;
+    left: 46%;
+    top: 37%;
+ }
+
+.text{
+    margin-top: 3rem;
+}
+
+h1{
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+ span{
+    font-size: 25px;
+    color: hsl(227, 10%, 46%);
+}
+
+p{
+    color: hsl(227, 10%, 46%);
+}
+
+hr{
+    border: 1px solid hsla(227, 10%, 46%, 0.37);
+    margin: 30px 5px;
+}
+
+.number{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.number h3{
+    justify-content: center;
+}
+
+.number p{
+    font-size: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        position: relative;
+    }
+
+    .fondo-two{
+        position: absolute;
+        top: 30rem;
+    }
+
+    .fondo-two{
+        width: 150%;
+    }
+
+    .caja{
+        width: 120%;
+        height:65%;
+        margin-left: 150px;
+    }
+
+    .caja .avatar{
+        width: 40%;
+        top: 15rem;
+        left: 13.5rem;
+    }
+
+    h1{
+        margin-top: 5rem;
+    }
+
+    hr{
+        margin: 3rem 10px;
+    }
+
+
+}
+
+
